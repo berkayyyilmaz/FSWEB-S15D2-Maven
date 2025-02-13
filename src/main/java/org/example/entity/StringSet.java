@@ -16,5 +16,6 @@ public class StringSet {
         TreeSet<String> uniqueWords = new TreeSet<>(Arrays.asList(words));
         System.out.println("after process:" + uniqueWords.size());
         return uniqueWords;
+
     }
 }
