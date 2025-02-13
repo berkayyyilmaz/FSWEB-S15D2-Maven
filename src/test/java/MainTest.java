@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -103,7 +104,7 @@ public class MainTest {
         assertEquals(totals.size(), 2);
     }
 
-    @DisplayName("TaskData getIntersect() method doğru çalışıyor mu ?")
+    @DisplayName("TaskData getIntersection() method doğru çalışıyor mu ?")
     @Test
     public void testGetIntersectMethod() throws NoSuchFieldException {
         Set<Task> taskSet = new HashSet<>();
